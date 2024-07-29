@@ -1,4 +1,5 @@
 import SwiftUI
+import _Parser
 
 struct ParagraphView: View {
   @Environment(\.theme.paragraph) private var paragraph

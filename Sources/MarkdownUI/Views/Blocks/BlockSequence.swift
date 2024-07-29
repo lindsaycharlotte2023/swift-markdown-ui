@@ -1,4 +1,5 @@
 import SwiftUI
+import _Parser
 
 struct BlockSequence<Data, Content>: View
 where

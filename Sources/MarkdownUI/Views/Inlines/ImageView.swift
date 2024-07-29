@@ -1,4 +1,5 @@
 import SwiftUI
+import _Parser
 
 struct ImageView: View {
   @Environment(\.theme.image) private var image

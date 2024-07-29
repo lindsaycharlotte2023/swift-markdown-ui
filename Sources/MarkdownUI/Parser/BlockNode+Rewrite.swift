@@ -1,4 +1,5 @@
 import Foundation
+import _Parser
 
 extension Sequence where Element == BlockNode {
   func rewrite(_ r: (BlockNode) throws -> [BlockNode]) rethrows -> [BlockNode] {

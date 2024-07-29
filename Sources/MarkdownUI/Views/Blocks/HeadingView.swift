@@ -1,4 +1,5 @@
 import SwiftUI
+import _Parser
 
 struct HeadingView: View {
   @Environment(\.theme.headings) private var headings

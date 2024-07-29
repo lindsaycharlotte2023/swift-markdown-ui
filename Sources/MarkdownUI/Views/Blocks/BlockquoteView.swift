@@ -1,4 +1,5 @@
 import SwiftUI
+import _Parser
 
 struct BlockquoteView: View {
   @Environment(\.theme.blockquote) private var blockquote

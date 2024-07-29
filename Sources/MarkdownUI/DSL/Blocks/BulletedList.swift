@@ -1,4 +1,5 @@
 import Foundation
+import _Parser
 
 /// A Markdown bulleted list element.
 ///

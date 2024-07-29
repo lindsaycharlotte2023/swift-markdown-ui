@@ -1,4 +1,5 @@
 import SwiftUI
+import _Parser
 
 struct TaskListItemView: View {
   @Environment(\.theme.listItem) private var listItem

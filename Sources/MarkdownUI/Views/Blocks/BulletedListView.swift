@@ -1,4 +1,5 @@
 import SwiftUI
+import _Parser
 
 struct BulletedListView: View {
   @Environment(\.theme.list) private var list

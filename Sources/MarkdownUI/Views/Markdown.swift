@@ -1,4 +1,5 @@
 import SwiftUI
+import _Parser
 
 /// A view that displays read-only Markdown content.
 ///

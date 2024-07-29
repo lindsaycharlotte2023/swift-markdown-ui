@@ -28,3 +28,17 @@ struct CodeBlockView: View {
       .textStyleForegroundColor()
   }
 }
+
+
+
+struct LatexBlockView: View {
+  private let content: String
+
+  init(content: String) {
+    self.content = content
+  }
+
+  var body: some View {
+      Text(content).foregroundStyle(Color.red)
+  }
+}

@@ -1,11 +1,13 @@
 import SwiftUI
+import _Parser
+import LaTeXSwiftUI
 
 struct InlineText: View {
   @Environment(\.inlineImageProvider) private var inlineImageProvider
   @Environment(\.baseURL) private var baseURL
   @Environment(\.imageBaseURL) private var imageBaseURL
   @Environment(\.theme) private var theme
-
+  @Environment(\.displayScale) private var displayScale
   @State private var inlineImages: [String: Image] = [:]
 
   private let inlines: [InlineNode]
@@ -26,7 +28,8 @@ struct InlineText: View {
           link: self.theme.link
         ),
         images: self.inlineImages,
-        attributes: attributes
+        attributes: attributes,
+        displayScale: displayScale
       )
     }
     .task(id: self.inlines) {

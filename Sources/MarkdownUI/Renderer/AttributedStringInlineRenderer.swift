@@ -1,4 +1,5 @@
 import Foundation
+import _Parser
 
 extension InlineNode {
   func renderAttributedString(
@@ -52,7 +53,10 @@ private struct AttributedStringInlineRenderer {
       self.renderLink(destination: destination, children: children)
     case .image(let source, let children):
       self.renderImage(source: source, children: children)
+    case .math(let source):
+        self.renderMath(source:source)
     }
+      
   }
 
   private mutating func renderText(_ text: String) {
@@ -142,12 +146,16 @@ private struct AttributedStringInlineRenderer {
   private mutating func renderImage(source: String, children: [InlineNode]) {
     // AttributedString does not support images
   }
+
+    private mutating func renderMath(source: String) {
+      // AttributedString does not support images
+    }
 }
 
-extension TextStyle {
-  fileprivate func mergingAttributes(_ attributes: AttributeContainer) -> AttributeContainer {
-    var newAttributes = attributes
-    self._collectAttributes(in: &newAttributes)
-    return newAttributes
-  }
+private extension TextStyle {
+    func mergingAttributes(_ attributes: AttributeContainer) -> AttributeContainer {
+        var newAttributes = attributes
+        self._collectAttributes(in: &newAttributes)
+        return newAttributes
+    }
 }

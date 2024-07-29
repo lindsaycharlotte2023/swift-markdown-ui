@@ -1,4 +1,5 @@
 import Foundation
+import _Parser
 
 extension Sequence where Element == InlineNode {
   func rewrite(_ r: (InlineNode) throws -> [InlineNode]) rethrows -> [InlineNode] {

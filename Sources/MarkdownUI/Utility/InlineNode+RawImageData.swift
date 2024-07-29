@@ -1,4 +1,5 @@
 import Foundation
+import _Parser
 
 struct RawImageData: Hashable {
   var source: String
