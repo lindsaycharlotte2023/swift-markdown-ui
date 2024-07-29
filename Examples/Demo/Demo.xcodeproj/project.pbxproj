@@ -29,6 +29,7 @@
 		99DE2A3D294F256A0025E332 /* HeadingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DE2A3C294F256A0025E332 /* HeadingsView.swift */; };
 		99DE2A3F294F33030025E332 /* ListsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DE2A3E294F33030025E332 /* ListsView.swift */; };
 		99DE2A41294F8ED70025E332 /* TextStylesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DE2A40294F8ED70025E332 /* TextStylesView.swift */; };
+		D01283882C577715001A509C /* LatexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01283872C577715001A509C /* LatexView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		99DE2A3C294F256A0025E332 /* HeadingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingsView.swift; sourceTree = "<group>"; };
 		99DE2A3E294F33030025E332 /* ListsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsView.swift; sourceTree = "<group>"; };
 		99DE2A40294F8ED70025E332 /* TextStylesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStylesView.swift; sourceTree = "<group>"; };
+		D01283872C577715001A509C /* LatexView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatexView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				99DE2A40294F8ED70025E332 /* TextStylesView.swift */,
 				99DE2A22294D9A2C0025E332 /* Assets.xcassets */,
 				99DE2A24294D9A2C0025E332 /* Preview Content */,
+				D01283872C577715001A509C /* LatexView.swift */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 				99DE2A1F294D9A2B0025E332 /* DemoApp.swift in Sources */,
 				99DE2A39294E1B700025E332 /* RepositoryReadmeView.swift in Sources */,
 				9902F2B229571D5D003A2DCC /* ImagesView.swift in Sources */,
+				D01283882C577715001A509C /* LatexView.swift in Sources */,
 				9902F2B729575183003A2DCC /* ImageProvidersView.swift in Sources */,
 				99939E2D298EC9B500E3337E /* LazyLoadingView.swift in Sources */,
 			);
