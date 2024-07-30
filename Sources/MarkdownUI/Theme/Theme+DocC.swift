@@ -124,10 +124,12 @@ extension Theme {
         .relativeFrame(minWidth: .em(1.5), alignment: .trailing)
     }
     .table { configuration in
-      configuration.label
-        .fixedSize(horizontal: false, vertical: true)
-        .markdownTableBorderStyle(.init(.horizontalBorders, color: .grid))
-        .markdownMargin(top: .em(1.6), bottom: .zero)
+        ScrollView(.horizontal) {
+            configuration.label
+              .fixedSize(horizontal: true, vertical: true)
+              .markdownTableBorderStyle(.init(.horizontalBorders, color: .grid))
+              .markdownMargin(top: .em(1.6), bottom: .zero)
+        }
     }
     .tableCell { configuration in
       configuration.label
